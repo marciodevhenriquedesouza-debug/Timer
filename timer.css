@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+}
+
+.display {
+    text-align: center;
+    border: 5px solid #0f0f0f;
+    position: relative;
+    background-color: rgb(212, 210, 212);
+    height: 300px;
+    width: 800px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.7);
+}
+
+
+.timer h1 {
+
+
+    font-size: 80px;
+
+}
+
+.timer button {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:inset 0px 0px 15px 0px rgba(0, 0, 0, 0.7);
+}
+
+.green {
+
+    color: green;
+
+}
+
+.red {
+
+    color: red;
+
+}
+
+.timer button:hover {
+    background-color: rgb(83, 82, 81, 0.4);
+    scale: 1.1;
+}
+
+.timer button.activeStart {
+    background-color: green;
+    color: white;
+    scale: 1.1;
+}
+
+.timer button.activePause {
+    background-color: red;
+    color: white;
+    scale: 1.1;
+}
+
+.timer button.activeReset {
+    background-color: yellow;
+    color: black;
+    scale: 1.1;
+}
+
+.timer p {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 80px;
+}
